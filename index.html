@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+    <meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width">
+    <title>Clip Path Browser Support</title>
+
+     <!-- Custom Styling CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+   
+</head>
+
+<body>
+
+<div class="img-clip-block">
+      <div class="img-clip-row">
+        <div class="img-clip-wrap">
+        </div>
+      </div>
+
+      <div class="img-clip-row">
+        <a href="https://stocksnap.io/photo/J633WD7BAR" class="img-clip-wrap">
+          <div class="overlay">
+            <div class="overlay-content">BOX 1</div>
+          </div>
+        </a>
+
+        <a href="https://stocksnap.io/photo/J633WD7BAR" class="img-clip-wrap">
+          <div class="overlay">     
+            <div class="overlay-content">BOX 2</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="img-clip-row">
+        <a href="https://stocksnap.io/photo/J633WD7BAR" class="img-clip-wrap polygon-clip-rhombus">
+          <div class="overlay">
+            <div class="overlay-content">BOX 3</div>      
+          </div>
+        </a>
+      </div>
+    </div> <!-- /img-clip-block -->
+
+    <svg class="clip-svg">
+      <defs>
+        <clipPath id="clip-diamond-demo" clipPathUnits="objectBoundingBox">
+          <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
+        </clipPath>
+      </defs> 
+    </svg>
+
+</body>
+
+</html>
